@@ -9,7 +9,7 @@ export default () => {
   const app = fastify();
 
   // BEGIN (write your solution here)
-
+  app.get('/phones', (_, res) => res.send(data.phones)).get('/domains', (_, res) => res.send(data.domains));
   // END
 
   return app;
